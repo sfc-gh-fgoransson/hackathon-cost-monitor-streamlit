@@ -1,0 +1,17 @@
+definition_version: 2
+
+entities:
+  cost_monitoring_app:
+    type: streamlit
+    name: COST_MONITORING_APP
+    database: XIND_DATA_GEN
+    schema: COCO
+    query_warehouse: APP_WH
+    runtime_name: SYSTEM$ST_CONTAINER_RUNTIME_PY3_11
+    compute_pool: APP_COMPUTE_POOL
+    main_file: streamlit_app.py
+    artifacts:
+      - streamlit_app.py
+      - pages/
+      - utils/
+      - .streamlit/config.toml
